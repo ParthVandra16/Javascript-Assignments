@@ -1,0 +1,42 @@
+Name: Parth Vandra
+Course Name: JavaScript WEB601
+Title: Assignment1
+
+Assignment Description:
+In this assignment I can create angular application using node.js.
+I have select theme.
+my theme name is MyFavouriteCricketPlayer.
+
+First I have change version 0.0.1 in the package.json file.
+After that I add script to genrate directive,pipe and component and run script in the terminal.
+
+After that I create helpfiles folder inside the app folder.
+In the helper file folder I cretae two new file one is interface and another is for class.
+and write code accroding to the assignment.
+
+Then I genrate component card.
+
+
+ASSIGNMENT2
+
+I have delete class containlist class from content card
+delete the content-list.ts helper file
+
+generate new component called content-list
+crete an array of 6 item in the content-list.component.ts file
+write css code for styling in the content-list.component.scss
+
+remove Content-card from the html and add Content-list
+
+ Assignment3
+
+ change version "0.0.3" in the package.json file.
+
+Assignment4
+
+create new branch
+change version "0.0.4" in the package.json file.
+apply hover effect
+
+
+
