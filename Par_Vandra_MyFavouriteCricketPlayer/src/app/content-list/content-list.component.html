@@ -1,5 +1,10 @@
 <section class="section">
-  <h2>My Favorite Cricketer</h2>
+  <h2>My Favorite Cricket Player</h2>
+
+  <app-create-content
+    (contentAdded)="onContentAdded($event)"
+  ></app-create-content>
+
   <div>
     <label for="search">Search</label>
     <input
@@ -13,13 +18,8 @@
   <p *ngIf="isAvailable">Available</p>
   <p *ngIf="!isAvailable">Not Available</p>
   <ul class="content-list">
-    <li *ngFor="let content of contentList | contentlistpipe">
-      <ul class="content-list">
-        <li *ngFor="let content of contentList">
-          <app-content-card> ></app-content-card>
-        </li>
-      </ul>
+     <li *ngFor="let content of contentList">
+      <app-content-card [content]="content"></app-content-card>
     </li>
   </ul>
 </section>
-

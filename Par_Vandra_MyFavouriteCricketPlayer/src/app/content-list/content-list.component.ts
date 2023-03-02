@@ -89,6 +89,14 @@ export class ContentListComponent implements OnInit {
     this.searchTerm = event.target.value;
   }
 
+  onContentAdded(newContent: Content) {
+    this.contentList.push(newContent);
+
+    console.log(`Added ${newContent.title} successfully`);
+
+    console.log(this.contentList);
+  }
+
   searchContent() {
     console.log(this.searchTerm);
 
