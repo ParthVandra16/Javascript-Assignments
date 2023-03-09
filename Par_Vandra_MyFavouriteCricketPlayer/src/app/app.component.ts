@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CkplayerserviceService } from './ckplayerservice.service';
 
 @Component({
   selector: 'app-root',
@@ -8,5 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Par_Vandra_MyFavouriteCricketPlayer';
 
+  featuredckplayer: any;
 
+  constructor(private CkplayerserviceService: CkplayerserviceService) {}
+
+  ngOnInit() {
+    this.CkplayerserviceService['getckplayerById'](1).subscribe((cricketplayer: any ) => {
+      this.featuredckplayer = cricketplayer ;
+    });
+
+}
 }

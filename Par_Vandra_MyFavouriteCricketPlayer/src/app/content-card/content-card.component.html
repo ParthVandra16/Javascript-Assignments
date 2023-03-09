@@ -15,6 +15,20 @@
       src="https://via.placeholder.com/150"
       alt="{{ content?.title }}"
     />
+    <p>{{ sportplayer?.type }}</p>
+  <div ngClass="{{ sportplayer?.type }} content">
+    <div class="content-card-header">
+      <h3>{{ sportplayer?.title }}</h3>
+      <h4>{{ sportplayer?.cricketername }}</h4>
+      <ul class="content-tags">
+        <li class="content-tag" *ngFor="let tag of sportplayer?.tags">
+          {{ tag }}
+        </li>
+      </ul>
+    </div>
+    <p class="content-description">
+      {{ sportplayer?.description }}
+    </p>
   </div>
 
   </div>

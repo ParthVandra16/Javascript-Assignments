@@ -9,6 +9,9 @@ import { ContentListComponent } from './content-list/content-list.component';
 // @ts-ignore
 import { ContentFilterPipe } from './content-list/content-filter.pipe';
 import { HoverAffectDirective } from './hover-affect.directive';
+import { MessagesComponent } from './messages/messages.component';
+import { CreateContentComponent } from './createcontent/createcontent.component';
+import { CkplayerserviceService } from './ckplayerservice.service';
 
 @NgModule({
   declarations: [
@@ -17,9 +20,11 @@ import { HoverAffectDirective } from './hover-affect.directive';
     ContentListComponent,
     ContentFilterPipe,
     HoverAffectDirective,
+    MessagesComponent,
+    CreateContentComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [CkplayerserviceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
